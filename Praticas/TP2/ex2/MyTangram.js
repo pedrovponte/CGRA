@@ -20,6 +20,10 @@ class MyTangram extends CGFobject {
 
     display() {
         //move diamond
+        this.scene.pushMatrix();
+        this.scene.rotate(-Math.PI / 2,1,0,0);
+        this.scene.translate(2.6,-3.6,0.01);
+        this.scene.scale(0.8,0.8,0.8);
         this.scene.translate(0.3,0,0);
         this.scene.pushMatrix();
         // var move_diamond = [
@@ -68,11 +72,7 @@ class MyTangram extends CGFobject {
         this.scene.translate(4.3, -0.2, 0);
         this.smallTriangle2.display();
         this.scene.popMatrix();
+        this.scene.popMatrix();
         
     }
-
-    
-
-
-
 }

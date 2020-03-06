@@ -33,7 +33,21 @@ class MyUnitCube extends CGFobject {
             5, 1, 2, //cima
             5, 2, 6,
             6, 5, 4, //tras
-            6, 4, 7
+			6, 4, 7,            
+			
+			//visão inversa
+			0, 1, 3, //frente 
+            2, 3, 1,
+            0, 1, 4, //esquerda
+            5, 4, 1,
+            3, 0, 4, //baixo
+            7, 3, 4,
+            3, 2, 6, //direita
+            7, 3, 6,
+            2, 1, 5, //cima
+            6, 2, 5,
+            4, 5, 6, //tras
+            7, 4, 6
 		];
 
 		//The defined indices (and corresponding vertices)
@@ -41,5 +55,6 @@ class MyUnitCube extends CGFobject {
 		this.primitiveType = this.scene.gl.TRIANGLES;
 
 		this.initGLBuffers();
+
 	}
 }
